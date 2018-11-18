@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "985734534440",
+    "firebase_url": "https://whoisthere-adc51.firebaseio.com",
+    "project_id": "whoisthere-adc51",
+    "storage_bucket": "whoisthere-adc51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985734534440:android:9dd9efdd2292e8ef",
+        "android_client_info": {
+          "package_name": "com.zabozhanov.whoisthere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985734534440-vi5elbji1g5stpefit5pr5gq02de74fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zabozhanov.whoisthere",
+            "certificate_hash": "15186eaada45b749b71cc222cc412355d94a1137"
+          }
+        },
+        {
+          "client_id": "985734534440-5hm925lefefdkemqid3atgohttdbk1bj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASwNYCabc8NRvrwL_Y0FCguNzmStj_6RE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985734534440-5hm925lefefdkemqid3atgohttdbk1bj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

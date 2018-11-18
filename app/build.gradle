@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.zabozhanov.whoisthere"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation "io.reactivex.rxjava2:rxjava:2.1.16"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    kapt 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'com.arello-mobile:moxy:1.5.5'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
+
+    implementation 'com.otaliastudios:cameraview:1.5.1'
+
+    implementation 'com.github.pengrad:java-telegram-bot-api:3.6.0'
+    compile 'com.google.api-client:google-api-client:1.23.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+
+
+    compile 'com.google.apis:google-api-services-youtube:v3-rev204-1.23.0'
+
+    compile('com.google.api-client:google-api-client-android:+') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile 'com.android.support:exifinterface:27.1.1'
+    compile 'org.jsoup:jsoup:1.11.3'
+    compile 'com.marcinmoskala.activitystarter:activitystarter:1.11-beta'
+    compile 'com.marcinmoskala.activitystarter:activitystarter-kotlin:1.11-beta'
+    kapt 'com.marcinmoskala.activitystarter:activitystarter-compiler:1.11-beta'
+    implementation 'com.github.adrielcafe:KBus:1.0'
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

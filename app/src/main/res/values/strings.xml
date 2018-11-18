@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WhoIsThere</string>
+    <string name="hello">Привет! Для успешной работы нам нужны некоторые разрешения :)</string>
+    <string name="camera_setup">Настроить/показать камеру</string>
+    <string name="go">Вперед</string>
+    <string name="running_notify">WhoIsThere is running for you</string>
+    <string name="signin">Аккаунт/Войти</string>
+    <string name="settings">Настройки</string>
+    <string name="save">Сохранить</string>
+    <string name="your_tg_channel_name" formatted="false">@your_tg_channel_name</string>
+    <string name="bot_token">Your bot token</string>
+</resources>
